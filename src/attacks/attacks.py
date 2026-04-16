@@ -152,7 +152,7 @@ async def generate_ai_attacks() -> list:
     """
     client = genai.Client()
     response = client.models.generate_content(
-        model="gemini-2.5-flash-lite",
+        model="gemma-3-27b-it",
         contents=RED_TEAM_PROMPT,
     )
 
